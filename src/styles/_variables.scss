@@ -1,0 +1,88 @@
+$primary50: rgb(246 252 247);
+$primary100: rgb(220 241 222);
+$primary200: rgb(190 230 194);
+$primary300: rgb(161 218 168);
+$primary400: rgb(134 205 143);
+$primary500: rgb(108 191 120);
+$primary600: rgb(84 177 99);
+$primary700: rgb(65 158 82);
+$primary800: rgb(52 134 68);
+$primary900: rgb(42 109 57);
+$primary950: rgb(31 82 43);
+
+
+$neutral25: rgb(252, 252, 253);
+$neutral50: rgb(249, 250, 251);
+$neutral100: rgb(242, 244, 247);
+$neutral200: rgb(228, 231, 236);
+$neutral300: rgb(208, 213, 221);
+$neutral400: rgb(152, 162, 179);
+$neutral500: rgb(102, 112, 133);
+$neutral600: rgb(71, 84, 103);
+$neutral700: rgb(52, 64, 84);
+$neutral800: rgb(29, 41, 57);
+$neutral900: rgb(16, 24, 40);
+
+$fs-2xs: clamp(0.55rem, 0.6rem + 0.1vw, 0.625rem);
+$fs-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+$fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+$fs-base: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
+$fs-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+$fs-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+$fs-2xl: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+$fs-3xl: clamp(1.875rem, 1.6rem + 1vw, 2.5rem);
+
+$s-1: 0.25rem;
+$s-2: 0.5rem;
+$s-3: 0.75rem;
+$s-4: 1rem;
+$s-5: 1.25rem;
+$s-6: 1.5rem;
+$s-8: 2rem;
+$s-10: 2.5rem;
+$s-12: 3rem;
+
+$r-xs: 0.25rem;
+$r-sm: 0.5rem;
+$r-md: 0.75rem;
+$r-lg: 1rem;
+$r-xl: 1.25rem;
+$r-2xl: 2rem;
+$r-3xl: 3rem;
+$r-full: 999px;
+
+$navbar-height: 80px;
+
+$text: rgb(21 40 44);
+$text-light: $primary50;
+
+$text-muted: $neutral500;
+
+// $app-bg: linear-gradient(180deg, rgba(131, 198, 113, 0.6) 5.38%, rgba(255, 255, 255, 0) 74.37%), #F3F4F7;
+$app-bg: radial-gradient(85.5% 41.03% at 2.86% 2.38%, rgba(166, 245, 187, 0.45) 34.09%, rgba(189, 240, 157, 0) 91.27%), linear-gradient(180deg, #B4F2B1 0%, #BFF19B 10%, #E4EDBE 20%, #F3F9EB 40%, #F0F2F5 60%), #F3F4F7;
+$main-bg: $neutral100;
+$btn-bg: linear-gradient(180deg, #F2F3F4 0%, #E7E8EC 100%);
+$green-bg: linear-gradient(180deg, $primary400 0%, $primary500 100%);
+$light-bg: radial-gradient(98.28% 340.76% at 100% 100%, rgba(131, 198, 113, 0.65) 0%, rgba(255, 255, 255, 0) 65.91%), #E0F2DA;
+$border-color: $neutral300;
+
+$shadow: inset 0px -0.125rem 0px rgba(0, 0, 0, 0.09), inset 0px 0.125rem 0px rgba(255, 255, 255, 0.6);
+$shadow-dark: inset 0px -0.2rem 0px rgba(0, 0, 0, 0.09), inset 0px 0.2rem 0px rgba(255, 255, 255, 0.25);
+$shadow-green: inset 0px -0.2rem 0px rgba(19, 53, 6, 0.09), inset 0px 0.2rem 0px rgba(199, 243, 199, 0.48);
+$shadow-light: inset 0px 0.0625rem 0px rgba(255, 255, 255, 0.85);
+
+$warning: #F79009;
+$warning-fg: #FEF0C7;
+$error: #F04438;
+$error-fg: rgb(255, 227, 226);
+
+$z-dropdown: 100;
+$z-header: 100;
+$z-navbar: 100;
+$z-drawer-overlay: 200;
+$z-drawer: 201;
+$z-modal: 1000;
+$z-toast: 9999;
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Roboto', sans-serif;

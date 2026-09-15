@@ -1,0 +1,76 @@
+@use "variables" as *;
+@use "sass:map";
+
+$breakpoints: (
+  xs: 340px,
+  sm: 376px,
+  md: 426px,
+  lg: 480px,
+);
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@function breakpoint($name) {
+  @return map.get($breakpoints, $name);
+}
+
+@mixin respond($breakpoint) {
+  @media (min-width: breakpoint($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin respond-max($breakpoint) {
+  @media (max-width: #{breakpoint($breakpoint) - 1px}) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin box {
+  background: $main-bg;
+  border: 1px solid $border-color;
+  border-radius: $r-md;
+  box-shadow: $shadow;
+}
+
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin grid-expand($duration: 0.3s, $easing: ease) {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows $duration $easing;
+
+  &.expanded {
+    grid-template-rows: 1fr;
+  }
+
+  >* {
+    overflow: hidden;
+    min-height: 0;
+  }
+}
